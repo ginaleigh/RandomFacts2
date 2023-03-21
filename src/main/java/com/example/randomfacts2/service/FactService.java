@@ -32,7 +32,7 @@ public class FactService {
         // https://api.api-ninjas.com/v1/facts
         return webClient.get()
                 .uri(uriBuilder1 -> uriBuilder1.scheme("https").host("api.api-ninjas.com").path("v1/facts").queryParamIfPresent("limit", limitValue).build())
-                .header("X-Api-Key", config.apiKey)
+                .header("X-Api-Key", config.getKey())
                 .retrieve()
                 .bodyToMono(new ParameterizedTypeReference<List<Fact>>() {
                 })

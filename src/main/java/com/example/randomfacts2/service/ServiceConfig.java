@@ -5,8 +5,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConfigurationProperties(prefix = "api")
-//@ConstructorBinding
 public class ServiceConfig {
-    String apiKey = "";
+    String key;
 
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 }
