@@ -1,0 +1,20 @@
+# Random Facts Application
+
+This application generates random facts on various topics.
+
+## Getting Started
+
+To run this application, you need to have Java 17 and Maven installed on your machine. Once you have installed these dependencies, follow the steps below:
+
+1. Clone the repository to your local machine.
+2. Navigate to the root directory of the application.
+3. Run `mvn spring-boot:run` command to start the application.
+4. Open your web browser and go to `http://localhost:8080`
+5. Add /api/facts to get a single fact `http://localhost:8080/api/facts`
+6. Add /api/facts{number} to get up to 10 facts for example -> `http://localhost:8080/api/facts/7`
+
+## Technologies Used
+
+- Java 17
+- Spring Boot
+- Maven
